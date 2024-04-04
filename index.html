@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -12,43 +15,119 @@
 </head>
 
 <body>
-    <header class="header">
-        <h1><a href="index.html" class="logo">MARVIN</a></h1>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container" id="home">
-        <div class="inner-container">
-            <h1>UNLOCK THE<br>POTENTIAL WITHIN</h1>
-            <p>2ND YEAR STUDENT | ASPIRING DEVELOPER</p>
-            <a href="#about">Learn more about me</a>
-        </div>
-    </div>
-    <div class="container" id="about">
-        <h2>ABOUT</h2>
-        <div class="outer-box">
-            <div class="box inner-box-left">
-                <img src="./ugly_bastard.png" alt="picture">
-            </div>
-            <div class="box inner-box-right">
-                <h1>ANDREI MARVIN B. ROQUE</h1>
-                <p>Hello everyone, I am a student, currently taking a course of Bachelor of Science in Information
-                    Technology (BSIT) at Pamantasan ng Lungsod ng Pasig. In my free time, I like playing online games
-                    like
-                    LOL & Valorant. Additionally, I also like watching movies and anime.</p>
-                <a href="#skills">View my skills</a>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="skills">
+    <div class="outer-box-container">
+        <div class="main">
+            <header class="header">
+                <h1><a href="index.html" class="logo">MARVIN</a></h1>
+                <input type="checkbox" id="check">
+                <label for="check" class="icons">
+                    <svg class="burger-menu" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 7H19" stroke="#5F5A5A" stroke-width="2" stroke-linecap="round" />
+                        <path d="M5 12H19" stroke="#5F5A5A" stroke-width="2" stroke-linecap="round" />
+                        <path d="M5 17H19" stroke="#5F5A5A" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    <svg class="close-menu" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#33363F" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M6 6L18 18" stroke="#33363F" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </label>
 
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container" id="home">
+                <div class="inner-container">
+                    <h1>UNLOCK THE<br>POTENTIAL WITHIN</h1>
+                    <p>2ND YEAR STUDENT | ASPIRING DEVELOPER</p>
+                    <a href="#about">Learn more about me</a>
+                </div>
+            </div>
+            <div class="container" id="about">
+                <h2>ABOUT</h2>
+                <div class="outer-box">
+                    <div class="box inner-box-left">
+                        <img src="./ugly_bastard.png" alt="picture">
+                    </div>
+                    <div class="box inner-box-right">
+                        <h1><strong>ANDREI MARVIN B. ROQUE</strong></h1>
+                        <p>Hello everyone, I am a 20 years old <ins>student</ins>, currently taking a course of
+                            <strong>Bachelor of
+                                Science
+                                in
+                                Information
+                                Technology (BSIT)</strong> at Pamantasan ng Lungsod ng Pasig. I love eating and
+                            sleeping.
+                        </p>
+                        <a href="#skills">View my skills</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="skills">
+            <h2>SKILLS</h2>
+            <div class="outer-box-skills">
+                <div class="skills inner-box-skills-left">
+                    <div class="box-box">
+                        <h3>HTML</h3>
+                        <div class="box-skill">
+                            <div class="html">90%</div>
+                        </div>
+                        <h3>CSS</h3>
+                        <div class="box-skill">
+                            <div class="css">85%</div>
+                        </div>
+
+                        <h3>JavaScript</h3>
+                        <div class="box-skill">
+                            <div class="js">75%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills inner-box-skills-right">
+                    <h3>Project 1:</h3>
+                    <h3><cite>KAKAIBEANS</cite></h3>
+                    <img src="./uwu.jpg" alt="kakaibeans">
+                </div>
+            </div>
+        </div>
     </div>
+    </div>
+    <footer id="contact" class="footer">
+        <div class="inner-footer-container">
+            <p>&copy; 2024 by Andrei Roque</p>
+            <section>
+                <div class="text-social">
+                    <ul>
+                        <li><a href="https://www.facebook.com/andreimarvinballesteros.roque.7">facebook</a></li>
+                        <li><a href="https://twitter.com/marvinrq01">twitter</a></li>
+                        <li><a href="https://www.instagram.com/ma._.vs/">instagram</a></li>
+                        <li><a href="mailto:roque_andreimarvin@plpasig.edu.ph">email</a></li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="https://www.facebook.com/andreimarvinballesteros.roque.7"><i
+                                    class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/marvinrq01"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/ma._.vs/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="mailto:roque_andreimarvin@plpasig.edu.ph"><i
+                                    class="fa-regular fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </footer>
 </body>
 
 </html>
