@@ -248,7 +248,7 @@ a {
     font-family: 'Inter', sans-serif;
     color: #5F5A5A;
     position: absolute;
-    top: 225%;
+    top: 310%;
     left: 15%;
 }
 
@@ -277,6 +277,66 @@ a {
     width: 600px;
 }
 
+svg {
+    cursor: pointer;
+}
+
+.hobby-title {
+    font-family: 'Inter', sans-serif;
+    color: #5F5A5A;
+    position: absolute;
+    top: 210%;
+    left: 15%;
+}
+
+.hobbies-card {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Inter';
+}
+
+.card-hobby {
+    width: 325px;
+    height: auto;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.card-hobby img {
+    width: 100%;
+    height: 250px;
+    transition: all ease 250ms;
+}
+
+.over {
+    overflow: hidden;
+}
+
+.card-hobby img:hover {
+    transform: scale(1.2);
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: #393636;
+    line-height: 20px;
+}
+
+/* for bigger screens (laptop) */
 @media only screen and (max-width: 1500px) {
 
     .inner-box-right h1 {
@@ -295,7 +355,6 @@ a {
 
 }
 
-/* for bigger screens (laptop) */
 @media only screen and (min-width: 1000px) {
     .icons {
         display: none;
@@ -304,11 +363,15 @@ a {
     .social-icons {
         display: none;
     }
-
-
 }
 
 /* for smaller screens (tablet) */
+@media only screen and (max-width: 1150px) {
+    .hobbies-card {
+        padding-top: 130px;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     .inner-container h1 {
         font-size: 5rem;
@@ -375,8 +438,7 @@ a {
         display: block;
     }
 
-
-    #check:checked~.icons .burger-menu {
+    s #check:checked~.icons .burger-menu {
         display: none;
     }
 
@@ -394,10 +456,38 @@ a {
     }
 }
 
-
-
-
 /* for mobile phones */
+@media only screen and (max-width: 750px) {
+
+    .card-content {
+        padding: 10px;
+    }
+
+    .card-content h3 {
+        font-size: 20px;
+    }
+
+    .card-content p {
+        color: #393636;
+        line-height: 20px;
+    }
+
+    .card-hobby {
+        width: 225px;
+        height: auto;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+    }
+
+    .card-hobby img {
+        width: 100%;
+        height: 150px;
+        transition: all ease-out 250ms;
+    }
+}
 
 @media only screen and (max-width: 700px) {
     .outer-box-skills {
